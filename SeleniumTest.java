@@ -19,7 +19,6 @@ public class SeleniumTest {
 		WebDriverManager.iedriver().setup();
 		driver = new InternetExplorerDriver();
 		driver.get("https://www.amazon.in/");
-		driver.quit();
 		try {
 			Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
 			} catch (IOException e) {
